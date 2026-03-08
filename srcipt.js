@@ -57,8 +57,8 @@ issues.forEach(issue=>{
 
 const borderColor =
 issue.status==="open"
-? "border-green-400"
-: "border-purple-400"
+? "border-[#A855F7]"
+: "border-[#00A96E]"
 
 let priorityColor="badge"
 
@@ -75,8 +75,11 @@ class="card bg-[#ffffff] shadow hover:shadow-lg border-t-4 ${borderColor} cursor
 
 <div class="flex justify-between">
 
-<span class="text-xs text-gray-500">ID:
-${issue.id}
+<span class="text-xs text-gray-500"> 
+${issue.status === "open"
+ ? '<img src="./asets/Status.png" class="w-6 bg-[CBFADB] rounded-full shadow">'
+ : '<img src="./asets/Status (1).png" class="w-6 bg-[F0E2FF] rounded-full shadow">'
+}
 </span>
 
 <span class="${priorityColor}">
@@ -96,11 +99,11 @@ ${issue.description}
 
 <div class="flex gap-2 mt-2">
 
-<div class="badge badge-outline badge-error items-center">
-<p><img src="./asets/BugDroid.png" alt=""><p/><span>BUG<span/>
+<div class="badge badge-outline badge-error items-center  bg-[#FECACA]">
+<p ><img src="./asets/BugDroid.png" alt=""><p/><span>BUG<span/>
 </div>
 
-<span class="badge badge-outline badge-warning ">
+<span class="badge badge-outline badge-warning bg-[#FFF8DB]">
 <i class="fa-solid fa-life-ring"></i> HELP WANTED
 </span>
 
@@ -109,7 +112,7 @@ ${issue.description}
 
 <div class="text-xs text-gray-400 mt-3">
 
-<p>By ${issue.author}</p>
+<p>#${issue.id} By ${issue.author}</p>
 
 <p>${issue.createdAt}</p>
 
@@ -227,7 +230,7 @@ const text=document.getElementById("searchInput").value
 if(!text) return loadIssues()
 
 const res=await fetch(
-`https://phi-lab-server.vercel.app/api/v1/lab/issues/search?q=${text}`
+`https://phi-lab-server.vercel.app/api/v1/lab/issues/search?q=${searchText}`
 )
 
 const data=await res.json()
