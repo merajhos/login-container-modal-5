@@ -75,7 +75,7 @@ class="card bg-[#ffffff] shadow hover:shadow-lg border-t-4 ${borderColor} cursor
 
 <div class="flex justify-between">
 
-<span class="text-xs text-gray-500">
+<span class="text-xs text-gray-500">ID:
 ${issue.id}
 </span>
 
@@ -127,7 +127,6 @@ container.innerHTML+=card
 }
 
 
-
 function filterTab(type,el){
 
 document.querySelectorAll(".tab")
@@ -174,6 +173,7 @@ document.getElementById("modalDesc").innerText=issue.description
 document.getElementById("modalInfo").innerHTML=`
 
 
+
 <div class="flex gap-2 mb-2">
 
 <span class="badge badge-success">
@@ -212,6 +212,7 @@ Opened by ${issue.author}
 </div>
 
 `
+
 
 document.getElementById("issueModal").showModal()
 
