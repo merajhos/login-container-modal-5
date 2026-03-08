@@ -131,7 +131,7 @@ container.innerHTML+=card
 function filterTab(type,el){
 
 document.querySelectorAll(".tab")
-.forEach(t=>t.classList.remove("tab-active"))
+.forEach(tab=>tab.classList.remove("tab-active"))
 
 el.classList.add("tab-active")
 
@@ -145,7 +145,7 @@ issuesData.length+" Issues"
 }else{
 
 const filtered =
-issuesData.filter(i=>i.status===type)
+issuesData.filter(isu=>isu.status===type)
 
 displayIssues(filtered)
 
