@@ -77,8 +77,8 @@ class="card bg-[#ffffff] shadow hover:shadow-lg border-t-4 ${borderColor} cursor
 
 <span class="text-xs text-gray-500"> 
 ${issue.status === "open"
- ? '<img src="./asets/Status.png" class="w-6 bg-[CBFADB] rounded-full shadow">'
- : '<img src="./asets/Status (1).png" class="w-6 bg-[F0E2FF] rounded-full shadow">'
+ ? '<img src="./asets/Closed- Status .png" class="w-6 bg-[CBFADB] rounded-full shadow">'
+ : '<img src="./asets/Open-Status.png" class="w-6 bg-[F0E2FF] rounded-full shadow">'
 }
 </span>
 
