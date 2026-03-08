@@ -225,9 +225,9 @@ document.getElementById("issueModal").showModal()
 
 async function searchIssue(){
 
-const text=document.getElementById("searchInput").value
+const searchText =document.getElementById("searchInput").value
 
-if(!text) return loadIssues()
+if(!searchText) return loadIssues()
 
 const res=await fetch(
 `https://phi-lab-server.vercel.app/api/v1/lab/issues/search?q=${searchText}`
