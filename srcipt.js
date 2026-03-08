@@ -191,11 +191,11 @@ Opened by ${issue.author}
 
 <div class="flex  gap-2 mt-3">
 
-<div class="badge badge-outline badge-error items-center">
+<div class="badge badge-outline badge-error items-center bg-[#FECACA]">
 <p><img src="./asets/BugDroid.png" alt=""><p/><span>BUG<span/>
 </div>
 
-<span class="badge badge-outline badge-warning ">
+<span class="badge badge-outline badge-warning bg-[#FFF8DB]">
 <i class="fa-solid fa-life-ring"></i> HELP WANTED
 </span>
 

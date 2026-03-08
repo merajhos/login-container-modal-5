@@ -1,4 +1,4 @@
-1.What is the difference between var, let, and const? 
+Question no: 1.What is the difference between var, let, and const? 
 Ans:
 
 
@@ -15,7 +15,7 @@ let change করা যায়
 
 const change করা যায় না
 
-2.What is the spread operator (...)?
+Question no: 2.What is the spread operator (...) ?
 
 Example (Array)
 const numbers = [1,2,3];
@@ -28,7 +28,7 @@ const user = {name:"Meraj", age:20};
 
 const newUser = {...user, country:"BD"};
 
-3. What is the difference between map(), filter(), and forEach()?
+Question no: 3. What is the difference between map(), filter(), and forEach() ?
 
 Method   	        কাজ
 
@@ -60,7 +60,7 @@ math.forEach(n => {
 });             ans: return করে না।
 
 
-4 .What is an arrow function?
+Question no:4 .What is an arrow function ?
 
 Function
 function add(a,b){
