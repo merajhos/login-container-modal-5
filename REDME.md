@@ -32,9 +32,9 @@ Question no: 3. What is the difference between map(), filter(), and forEach() ?
 
 Method   	        কাজ
 
-map()	            নতুন array return করে
-filter()	        condition অনুযায়ী array filter করে
-forEach()	        শুধু loop চালায়
+map()	            নতুন array return করে,,,
+filter()	        condition অনুযায়ী array filter করে,,,
+forEach()	        শুধু loop চালায় ,,,
 
 
 
@@ -77,4 +77,5 @@ const name = "Meraj";
 const hsc = 2023;
 
 console.log(`My name is ${name} and I am class ${hsc}`);
+
 ans: My name is Meraj and I am class 2023;
